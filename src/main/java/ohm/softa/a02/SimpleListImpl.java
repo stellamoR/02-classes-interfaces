@@ -7,6 +7,7 @@ import java.util.Iterator;
 
 public class SimpleListImpl implements SimpleList, Iterable {
     private Element first;
+    private int test;
     public SimpleListImpl(){
         first = null;
     }
