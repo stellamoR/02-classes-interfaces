@@ -7,11 +7,9 @@ import java.util.Iterator;
 
 public class SimpleListImpl implements SimpleList, Iterable {
     private Element first;
-    private int test;
     public SimpleListImpl(){
         first = null;
     }
-	// TODO: Implement the required methods.
     public void add(Object item){
         Element curr = first;
         if(curr == null) {
@@ -30,6 +28,7 @@ public class SimpleListImpl implements SimpleList, Iterable {
         int count = 1;
         while(curr.next != null){
             count++;
+            curr = curr.next;
         }
         return count;
     }
@@ -66,13 +65,17 @@ public class SimpleListImpl implements SimpleList, Iterable {
        }
         @Override
         public boolean hasNext() {
-                return !(currentElement == null || currentElement.next == null);
+                return currentElement != null;
         }
 
         @Override
         public Object next() {
-            currentElement = currentElement.next;
-            return currentElement;
+           if(hasNext()) {
+               Element temp = currentElement;
+               currentElement = currentElement.next;
+               return temp.item;
+           }
+           return null;
         }
     }
 }
