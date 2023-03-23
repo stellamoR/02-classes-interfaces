@@ -32,15 +32,15 @@ _Note: the concept of an iterator will be discussed in detail in a few weeks._
 	- Can you think of some use cases for both?
 2. Implement `Element` as static inner class of `SimpleListImpl`.
 	- Why is this class static, and ideally `private`?
-		-because it does not need to be instantiated? something about methods
+		- because it does not need to be instantiated? something about methods
 3. Implement the `Iterator` interface as inner class of `SimpleListImpl`.
 	- Why is it helpful to make this class non-static?
-		-it has to access the instance-values during runtime
+		- it has to access the instance-values during runtime
 4. Add the `Iterable` interface to your `SimpleListImpl`, and implement the required methods.
 	- Why is implementing the `Iterable` interface essential for a (good) list implementation? (Hint: Check the test cases!)
-		-to make it foreach-able
+		- to make it foreach-able
 	- Are there any language definition constraints to this?
-		-don't know
+		- don't know
 
 
 ## Anonymous (inner) classes and lambda expressions
