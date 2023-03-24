@@ -53,3 +53,8 @@ _Note: the concept of an iterator will be discussed in detail in a few weeks._
 5. Review anonymous classes and lambdas.
 	- Lambda expressions look very convenient; can you think of a scenario where they should not be used?
 	- Recall how scoping works for anonymous (inner or local) classes; can you think of a scenario where to avoid them?
+
+
+6. Fragen
+	- Warum keine final static class?	
+		-RIP, nicht gehört
