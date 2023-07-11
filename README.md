@@ -32,7 +32,7 @@ _Note: the concept of an iterator will be discussed in detail in a few weeks._
 	- Can you think of some use cases for both?
 2. Implement `Element` as static inner class of `SimpleListImpl`.
 	- Why is this class static, and ideally `private`?
-		- because it does not need to be instantiated? something about methods
+		- So that it can exist without its outer Wrapping class (copy to another list?). Private: So that you can't fool around and misuse the List-Structure
 3. Implement the `Iterator` interface as inner class of `SimpleListImpl`.
 	- Why is it helpful to make this class non-static?
 		- it has to access the instance-values during runtime
