@@ -42,7 +42,6 @@ _Note: the concept of an iterator will be discussed in detail in a few weeks._
 	- Are there any language definition constraints to this?
 		- don't know
 
-
 ## Anonymous (inner) classes and lambda expressions
 
 1. Implement the `filter` method for your `SimpleListImpl` class (see `SimpleFilter` interface).
@@ -52,7 +51,9 @@ _Note: the concept of an iterator will be discussed in detail in a few weeks._
 3. Add some test methods and implement another filter logic (_e.g._ every third number, or any number smaller than a certain value).
 5. Review anonymous classes and lambdas.
 	- Lambda expressions look very convenient; can you think of a scenario where they should not be used?
+		- Where Names are clearer for understanding the code, Where they are too long, Where they are reused often and Where they are Nested  
 	- Recall how scoping works for anonymous (inner or local) classes; can you think of a scenario where to avoid them?
+ 		- They have access to every  
 
 
 6. Fragen
